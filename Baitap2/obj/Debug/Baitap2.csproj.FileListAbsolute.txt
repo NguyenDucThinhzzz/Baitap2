@@ -1,0 +1,27 @@
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\bin\Debug\Baitap2.exe.config
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\bin\Debug\Baitap2.exe
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\bin\Debug\Baitap2.pdb
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.AssemblyReference.cache
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.Properties.Resources.resources
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.GenerateResource.cache
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.CoreCompileInputs.cache
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.exe
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.pdb
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.ProductManager.resources
+E:\Study\Lap trinh truc quan\Baitap2\Baitap2\obj\Debug\Baitap2.MainMenu.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\bin\Debug\Baitap2.exe.config
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\bin\Debug\Baitap2.exe
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\bin\Debug\Baitap2.pdb
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.AssemblyReference.cache
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.SuggestedBindingRedirects.cache
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.MainMenu.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.ProductInfo.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.ProductManager.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Properties.Resources.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.ShoppingCart.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.GenerateResource.cache
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.csproj.CoreCompileInputs.cache
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.exe
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.pdb
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Forms.Login.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Forms.SignUp.resources
