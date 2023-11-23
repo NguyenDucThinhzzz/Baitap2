@@ -44,7 +44,7 @@ namespace Baitap2
 		{
 
 		}
-		public void CalculateTotal()
+		public long CalculateTotal()
 		{
 			long total = 0;
 			foreach (var x in mainMenu.ShoppingCartData.Items)
@@ -54,11 +54,27 @@ namespace Baitap2
 				total += price * x.Value;
 			}
 			labelPrice.Text = total + "$";
+			return total;
 		}
 
 		private void buttonBuy_Click(object sender, EventArgs e)
 		{
+			addReceiptToSQL();
+		}
 
+		private void addReceiptToSQL()
+		{
+			DataTable dt = ConnectData.ReadData("select * from HoaDonBan");
+			string receiptID = "MHD" + dt.Rows.Count;
+			string customerID = ConnectData.ReadData("select * from KhachHang where KhachHang.Username = '"+ mainMenu.User.Name + "'").Rows[0].Field<string>("MaKH");
+			ConnectData.ChangeData("insert into HoaDonBan(MaHD,MaNV,NgayBan,MaKH,TongTien)" +
+									"values('"+ receiptID +"','ONLINE',GETDATE(),'"+ customerID +"',"+ CalculateTotal()+")");
+			foreach(ProductCartPane product in panels)
+			{
+				long total = long.Parse(product.ProductPrice.Text) * int.Parse(product.ProductAmount.Text);
+				ConnectData.ChangeData("insert into ChiTietHD(MaHD,MaSP,SoLuong,TongTien)" +
+										"values('"+ receiptID +"','"+ product.ID +"',"+ product.ProductAmount.Text +","+ total +")");
+			}
 		}
 	}
 }

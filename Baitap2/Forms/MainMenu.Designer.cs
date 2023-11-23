@@ -32,6 +32,7 @@ namespace Baitap2
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.labelUser = new System.Windows.Forms.Label();
 			this.buttonCart = new System.Windows.Forms.Button();
 			this.productManage_button = new System.Windows.Forms.Button();
 			this.CompanyLable = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@ namespace Baitap2
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.labelUser = new System.Windows.Forms.Label();
+			this.buttonReceipt = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.groupBox1.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
@@ -51,6 +52,7 @@ namespace Baitap2
 			// groupBox1
 			// 
 			this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.groupBox1.Controls.Add(this.buttonReceipt);
 			this.groupBox1.Controls.Add(this.labelUser);
 			this.groupBox1.Controls.Add(this.buttonCart);
 			this.groupBox1.Controls.Add(this.productManage_button);
@@ -66,10 +68,21 @@ namespace Baitap2
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
 			// 
+			// labelUser
+			// 
+			this.labelUser.AutoSize = true;
+			this.labelUser.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelUser.Location = new System.Drawing.Point(154, 18);
+			this.labelUser.Name = "labelUser";
+			this.labelUser.Size = new System.Drawing.Size(143, 24);
+			this.labelUser.TabIndex = 4;
+			this.labelUser.Text = "Welcome, Username";
+			this.labelUser.Click += new System.EventHandler(this.labelUser_Click);
+			// 
 			// buttonCart
 			// 
 			this.buttonCart.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.buttonCart.Location = new System.Drawing.Point(1103, 10);
+			this.buttonCart.Location = new System.Drawing.Point(1078, 11);
 			this.buttonCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.buttonCart.Name = "buttonCart";
 			this.buttonCart.Size = new System.Drawing.Size(153, 42);
@@ -171,16 +184,17 @@ namespace Baitap2
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Product Name";
 			// 
-			// labelUser
+			// buttonReceipt
 			// 
-			this.labelUser.AutoSize = true;
-			this.labelUser.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelUser.Location = new System.Drawing.Point(918, 18);
-			this.labelUser.Name = "labelUser";
-			this.labelUser.Size = new System.Drawing.Size(143, 24);
-			this.labelUser.TabIndex = 4;
-			this.labelUser.Text = "Welcome, Username";
-			this.labelUser.Click += new System.EventHandler(this.labelUser_Click);
+			this.buttonReceipt.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.buttonReceipt.Location = new System.Drawing.Point(1002, -1);
+			this.buttonReceipt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.buttonReceipt.Name = "buttonReceipt";
+			this.buttonReceipt.Size = new System.Drawing.Size(127, 62);
+			this.buttonReceipt.TabIndex = 5;
+			this.buttonReceipt.Text = "Receipt Viewer";
+			this.buttonReceipt.UseVisualStyleBackColor = true;
+			this.buttonReceipt.Click += new System.EventHandler(this.buttonReceipt_Click);
 			// 
 			// pictureBox1
 			// 
@@ -232,5 +246,6 @@ namespace Baitap2
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button buttonCart;
 		private System.Windows.Forms.Label labelUser;
+		private System.Windows.Forms.Button buttonReceipt;
 	}
 }

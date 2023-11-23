@@ -48,9 +48,25 @@ create table HoaDonBan(
 	MaNV nvarchar(50) not null FOREIGN KEY REFERENCES NhanVien(MaNV),
 	NgayBan datetime not null ,
 	MaKH nvarchar(50) not null FOREIGN KEY REFERENCES KhachHang(MaKH),
-	TongTien float not null ,
+	TongTien money not null ,
 )
 go
+create table ChiTietHD(
+	MaHD nvarchar(50) FOREIGN KEY REFERENCES HoaDonBan(MaHD) ,
+	MaSP nvarchar(50) FOREIGN KEY REFERENCES ProductInfo(ProductID),
+	PRIMARY KEY (MaHD, MaSP),
+	SoLuong int not null,
+	TongTien money not null
+)
+go
+
+insert into HoaDonBan(MaHD,MaNV,NgayBan,MaKH,TongTien)
+values('MHD0'+,'NV001',GETDATE(),'MKH0',100000)
+go
+insert into ChiTietHD(MaHD,MaSP,SoLuong,TongTien)
+values('MHD0','MSP001',3,100000)
+insert into ChiTietHD(MaHD,MaSP,SoLuong,TongTien)
+values('MHD0','MSP002',5,60000)
 
 insert into ManufactureInfo(MftID, MftName)
 values('MFT001','Asus')
@@ -73,3 +89,6 @@ insert into NhanVien(MaNV, TenNV, GioiTinh, DienThoai)
 values('NV002',N'Đào Quang Cường', 'Nam', '09536345')
 insert into NhanVien(MaNV, TenNV, GioiTinh, DienThoai)
 values('NV003',N'Nguyễn Đức Thịnh', 'Nam', '09164664')
+insert into NhanVien(MaNV, TenNV, GioiTinh, DienThoai)
+values('ONLINE',N'ONLINE', 'ONLINE', '0')
+

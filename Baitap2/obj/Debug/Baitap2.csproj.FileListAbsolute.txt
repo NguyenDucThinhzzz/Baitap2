@@ -25,3 +25,4 @@ C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.exe
 C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.pdb
 C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Forms.Login.resources
 C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Forms.SignUp.resources
+C:\Users\nicov\Downloads\Download\Baitap2\Baitap2\obj\Debug\Baitap2.Forms.ReceiptViewer.resources

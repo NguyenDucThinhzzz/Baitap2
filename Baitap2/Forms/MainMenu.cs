@@ -1,4 +1,5 @@
-﻿using Baitap2.Scripts.Login;
+﻿using Baitap2.Forms;
+using Baitap2.Scripts.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -121,6 +122,7 @@ namespace Baitap2
 			{
 				case EUserType.User:
 					productManage_button.Visible = false;
+					buttonReceipt.Visible = false;
 					break;
 				case EUserType.Admin:
 					buttonCart.Visible = false;
@@ -131,6 +133,12 @@ namespace Baitap2
 		private void labelUser_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void buttonReceipt_Click(object sender, EventArgs e)
+		{
+			ReceiptViewer receiptViewer = new ReceiptViewer();
+			receiptViewer.Show();
 		}
 	}
 }
